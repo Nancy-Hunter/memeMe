@@ -1,5 +1,5 @@
 import './style.css'
-import { PROJECT_ID, DATABASE_ID, COLLECTION_ID } from './shhh.js';
+//import { PROJECT_ID, DATABASE_ID, COLLECTION_ID } from './shhh.js';
 import { personalityTypes} from './api.js';
 import { Client, Databases, ID, Query } from "appwrite";
 
