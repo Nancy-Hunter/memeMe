@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme me</title>
+    <meta property="og:title" content="Meme Me" />
+    <meta property="og:image" content="nyanClassy.png" />
+  </head>
+  <body>
+    <header>
+      <h1>Find your Inner Meme</h1>
+      <div class="intro">
+        <p>Ever wondered what meme truly defines you? </p> 
+        <p>Take my 7 question personality quiz and discover the meme that encapsulates your vibe, energy, and essence.</p>
+      </div>
+    </header>
+    <section class = "hidden" id="myInfo">
+      <img id='myMeme' src="x">
+      <p id="myCaption"></p>
+      <button id="restart">Re-Memeify Me</button>
+      <p>Powered by <a href="https://www.appwrite.io/" class="appwrite">Appwrite</a> and Built by <a href="https://100devs.org/" class="100devs">100 Devs</a></p>
+    </section>
+    <section class = "quiz">
+      <form action="">
+          <fieldset>
+            <legend>1. Choose a pet to describe your energy:</legend>
+            <div>
+              <input type="radio" name="question1" value="happy">
+              <label for="happy"> A poorly trained and adorable golden retriever</label>
+            </div>
+            <div>
+              <input type="radio" name="question1" value="sad">
+              <label for="sad"> A cat that has seen too much.</label>
+            </div>
+            <div>
+              <input type="radio" name="question1" value="surprised">
+              <label for="surprised"> A raccoon in a trash can with laser eyes.</label>
+            </div>
+            <div>
+              <input type="radio" name="question1" value="fearful">
+              <label for="fearful"> A parakeet that's missing a few feathers.</label>
+            </div>
+            <div>
+              <input type="radio" name="question1" value="angry">
+              <label for="angry">  A goose, and I AM ready to fight.</label>
+            </div>
+          </fieldset>
+          <fieldset>
+          <legend>2. If your brain had a default background noise, what would it be?</legend>
+          <div>
+            <input type="radio" name="question2" value="happy">
+            <label for="happy"> Soft ukulele music and birds chirping.</label>
+          </div>
+          <div>
+            <input type="radio" name="question2" value="sad">
+            <label for="sad"> A sad tuba</label>
+          </div>
+          <div>
+            <input type="radio" name="question2" value="surprised">
+            <label for="surprised"> A random airhorn every 15 seconds.</label>
+          </div>
+          <div>
+            <input type="radio" name="question2" value="fearful">
+            <label for="fearful"> The Jaws theme music</label>
+          </div>
+          <div>
+            <input type="radio" name="question2" value="angry">
+            <label for="angry"> Loud guitar solos</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>3. What's your ideal weekend activity?</legend>
+          <div>
+            <input type="radio" name="question3" value="happy">
+            <label for="happy"> Touching grass, playing games, and eating BBQ</label>
+          </div>
+          <div>
+            <input type="radio" name="question3" value="sad">
+            <label for="sad"> Getting Cozy watching movies and memes.</label>
+          </div>
+          <div>
+            <input type="radio" name="question3" value="surprised">
+            <label for="surprised"> Having absolutely ZERO responsibilities.</label>
+          </div>
+          <div>
+            <input type="radio" name="question3" value="fearful">
+            <label for="fearful"> Doomscrolling and playing zombie videogames.</label>
+          </div>
+          <div>
+            <input type="radio" name="question3" value="angry">
+            <label for="angry"> Flaming trolls on the interwebs</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>4. Your BFF orders y'all an anchovy, pineapple, and olive pizza. How do you respond?</legend>
+          <div>
+            <input type="radio" name="question4" value="happy">
+            <label for="happy"> Wow, bold choice! Gotta try everything once I guess</label>
+          </div>
+          <div>
+            <input type="radio" name="question4" value="sad">
+            <label for="sad"> Oh… okay. So basically, I'll just eat the crust</label>
+          </div>
+          <div>
+            <input type="radio" name="question4" value="surprised">
+            <label for="surprised"> Are we filming a prank video? Is there a hidden camera somewhere?</label>
+          </div>
+          <div>
+            <input type="radio" name="question4" value="fearful">
+            <label for="fearful"> Oh no… what if I hate it? What if I secretly love it? What if this ruins our friendship forever?</label>
+          </div>
+          <div>
+            <input type="radio" name="question4" value="angry">
+            <label for="angry"> ARE YOU SERIOUS?! Of all the pizzas in the world, THIS is what you chose?</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>5. Which fictional character do you relate to most?</legend>
+          <div>
+            <input type="radio" name="question5" value="happy">
+            <label for="happy"> SpongeBob Squarepants who lives in a pineapple under the sea</label>
+          </div>
+          <div>
+            <input type="radio" name="question5" value="sad">
+            <label for="sad"> Eeyore from <span class="italic">Winnie the Pooh</span></label>
+          </div>
+          <div>
+            <input type="radio" name="question5" value="surprised">
+            <label for="surprised"> Fry from <span class="italic">Futurama</span></label>
+          </div>
+          <div>
+            <input type="radio" name="question5" value="fearful">
+            <label for="fearful"> Morty from <span class="italic">Rick and Morty</span></label>
+          </div>
+          <div>
+            <input type="radio" name="question5" value="angry">
+            <label for="angry"> Ursula the Sea Witch from <span class="italic">The Little Mermaid</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>6. You see a raccoon digging through your trash. What do you do?</legend>
+          <div>
+            <input type="radio" name="question6" value="conservative">
+            <label for="conservative">Get out of here, varmint! That's my trash!</label>
+          </div>
+          <div>
+            <input type="radio" name="question6" value="liberal">
+            <label for="liberal"> Give it a snack and ask it about its struggles under late stage capitalism.</label>
+          </div>          
+          <div>
+            <input type="radio" name="question6" value="centrist">
+            <label for="centrist">Let it vibe. That's between the raccoon and the universe.</label>
+          </div>          
+        </fieldset>
+        <fieldset>
+          <legend>7. You just finished this quiz. What's your reaction?</legend>
+          <div>
+            <input type="radio" name="question7" value="anxious">
+            <label for="anxious"> Am I in a simulation? Who programmed this?</label>
+          </div>
+          <div>
+            <input type="radio" name="question7" value="confident">
+            <label for="confident"> Meme time!! gimmie gimmie gimmie</label>
+          </div>
+        </fieldset>
+      </form>
+      <div>
+        <button type="submit">Memeify Me</button>
+      </div>
+    </section>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
