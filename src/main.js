@@ -1,19 +1,19 @@
 import './style.css'
-//import { PROJECT_ID, DATABASE_ID, COLLECTION_ID } from './shhh.js';
 import { personalityTypes} from './api.js';
 import { Client, Databases, ID, Query } from "appwrite";
 
 const client = new Client()
     .setEndpoint('https://cloud.appwrite.io/v1')
-    .setProject(PROJECT_ID);
+    .setProject(import.meta.env.VITE_PROJECT_ID);
 
 const databases = new Databases(client);
+
 // Loads api into the database
 // let promises = []
 // for(let i = 0; i < personalityTypes.length; i++) {
 // const promise = databases.createDocument(
-//     DATABASE_ID,
-//     COLLECTION_ID,
+//     import.meta.env.VITE_DATABASE_ID,
+//     import.meta.env.VITE_COLLECTION_ID,
 //     ID.unique(), 
 //       personalityTypes[i]
 //     )
@@ -30,8 +30,8 @@ async function returnMeme(archetype, politic, confident){
   let result
   if (politic == 'unanswered') {
     result = await databases.listDocuments(
-        DATABASE_ID, 
-        COLLECTION_ID, 
+      import.meta.env.VITE_DATABASE_ID, 
+      import.meta.env.VITE_COLLECTION_ID, 
         [
           Query.equal('archetype', 'happy'),
           Query.equal('politic', 'conservative'),
@@ -40,8 +40,8 @@ async function returnMeme(archetype, politic, confident){
       )
   } else {
     result = await databases.listDocuments(
-        DATABASE_ID, 
-        COLLECTION_ID, 
+      import.meta.env.VITE_DATABASE_ID, 
+      import.meta.env.VITE_COLLECTION_ID, 
         [
           Query.equal('archetype', archetype),
           Query.equal('politic', politic),
