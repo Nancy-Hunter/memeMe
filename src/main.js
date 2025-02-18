@@ -1,4 +1,4 @@
-import './style.css'
+
 import { personalityTypes} from './api.js';
 import { Client, Databases, ID, Query } from "appwrite";
 
