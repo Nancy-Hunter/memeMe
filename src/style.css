@@ -110,3 +110,6 @@ fieldset {
 .italic {
   font-style: italic;
 }
+.submitButton {
+  margin-bottom: 6rem;
+}
