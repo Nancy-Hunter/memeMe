@@ -62,7 +62,8 @@ async function returnMeme(archetype, politic, confident){
  
   let quiz = document.getElementsByClassName('quiz')
   quiz[0].classList.add('hidden')
-
+  quiz[1].classList.add('hidden')
+  
   let restart = document.getElementById('restart')
   restart.addEventListener('click', function () {location.reload()})
 }
