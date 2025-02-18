@@ -5,7 +5,7 @@ An introductory project utilizing the Appwrite Platform. Enabling building an en
 
 Meme Me is a quiz personality quiz revealing your hidden inner meme
 
-**Link to project:** https://mememe-u3wv.onrender.com
+**Link to project:** https://memeify-me.netlify.app/
 
 ![Classy Nyan Cat](https://i.ibb.co/x87wz0xW/nyan-Classy.png)
 
