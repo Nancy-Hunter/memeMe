@@ -1,9 +1,9 @@
 
 # Meme Me
 
-An introductory project utilizing the Appwrite Platform. Enabling building an entire backend within minutes and scale effortlessly using Appwrite's open-source platform. Added Authentication, Databases, Functions, Storage, and Messaging to my project using the frameworks and languages of my choice.
+An introductory project utilizing the Appwrite Platform. Appwrite enabling building an entire backend within hours and thier is the ability to scale effortlessly using the open-source platform. 
 
-Meme Me is a quiz personality quiz revealing your hidden inner meme
+Meme Me is a quiz personality quiz revealing your hidden inner meme. A 7 question quiz to discover the meme that encapsulates your vibe, energy, and essence.
 
 **Link to project:** https://memeify-me.netlify.app/
 
