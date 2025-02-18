@@ -96,7 +96,6 @@ function calculateMeme(e) {
   let archetype = feeling.length == 1? feelings[feeling] : 'confused'
   let politic = !document.querySelector(`input[name="question6"]:checked`)? 'unanswered': document.querySelector(`input[name="question6"]:checked`).value
   let confident = !document.querySelector(`input[name="question7"]:checked`)? false: document.querySelector(`input[name="question7"]:checked`).value == 'confident' ? true : false
-  console.log(archetype, politic, confident)
   returnMeme(archetype, politic, confident)
 }
 
